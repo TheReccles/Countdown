@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41FA9F41E3980BC00AB67EE /* Entry+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FA9F01E3980BC00AB67EE /* Entry+CoreDataClass.swift */; };
+		A41FA9F51E3980BC00AB67EE /* Entry+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FA9F11E3980BC00AB67EE /* Entry+CoreDataProperties.swift */; };
+		A41FA9F61E3980BC00AB67EE /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FA9F21E3980BC00AB67EE /* Image+CoreDataClass.swift */; };
+		A41FA9F71E3980BC00AB67EE /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41FA9F31E3980BC00AB67EE /* Image+CoreDataProperties.swift */; };
 		A4913F001E172E38002BECF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4913EFF1E172E38002BECF8 /* AppDelegate.swift */; };
-		A4913F021E172E38002BECF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4913F011E172E38002BECF8 /* ViewController.swift */; };
+		A4913F021E172E38002BECF8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4913F011E172E38002BECF8 /* MainVC.swift */; };
 		A4913F051E172E38002BECF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4913F031E172E38002BECF8 /* Main.storyboard */; };
 		A4913F081E172E38002BECF8 /* Countdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4913F061E172E38002BECF8 /* Countdown.xcdatamodeld */; };
 		A4913F0A1E172E38002BECF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4913F091E172E38002BECF8 /* Assets.xcassets */; };
@@ -16,9 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A41FA9F01E3980BC00AB67EE /* Entry+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A41FA9F11E3980BC00AB67EE /* Entry+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A41FA9F21E3980BC00AB67EE /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A41FA9F31E3980BC00AB67EE /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A4913EFC1E172E38002BECF8 /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4913EFF1E172E38002BECF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4913F011E172E38002BECF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4913F011E172E38002BECF8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		A4913F041E172E38002BECF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4913F071E172E38002BECF8 /* Countdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countdown.xcdatamodel; sourceTree = "<group>"; };
 		A4913F091E172E38002BECF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41FA9F81E3980D700AB67EE /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A41FA9F11E3980BC00AB67EE /* Entry+CoreDataProperties.swift */,
+				A41FA9F31E3980BC00AB67EE /* Image+CoreDataProperties.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
 		A4913EF31E172E37002BECF8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +73,10 @@
 		A4913EFE1E172E38002BECF8 /* Countdown */ = {
 			isa = PBXGroup;
 			children = (
+				A4913F161E172E7C002BECF8 /* Model */,
+				A4913F151E172E66002BECF8 /* View */,
+				A4913F141E172E58002BECF8 /* Controller */,
 				A4913EFF1E172E38002BECF8 /* AppDelegate.swift */,
-				A4913F011E172E38002BECF8 /* ViewController.swift */,
 				A4913F031E172E38002BECF8 /* Main.storyboard */,
 				A4913F091E172E38002BECF8 /* Assets.xcassets */,
 				A4913F0B1E172E38002BECF8 /* LaunchScreen.storyboard */,
@@ -65,6 +84,31 @@
 				A4913F061E172E38002BECF8 /* Countdown.xcdatamodeld */,
 			);
 			path = Countdown;
+			sourceTree = "<group>";
+		};
+		A4913F141E172E58002BECF8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A4913F011E172E38002BECF8 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A4913F151E172E66002BECF8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A4913F161E172E7C002BECF8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A41FA9F01E3980BC00AB67EE /* Entry+CoreDataClass.swift */,
+				A41FA9F21E3980BC00AB67EE /* Image+CoreDataClass.swift */,
+				A41FA9F81E3980D700AB67EE /* Generated */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4913F021E172E38002BECF8 /* ViewController.swift in Sources */,
+				A4913F021E172E38002BECF8 /* MainVC.swift in Sources */,
 				A4913F081E172E38002BECF8 /* Countdown.xcdatamodeld in Sources */,
+				A41FA9F41E3980BC00AB67EE /* Entry+CoreDataClass.swift in Sources */,
+				A41FA9F61E3980BC00AB67EE /* Image+CoreDataClass.swift in Sources */,
 				A4913F001E172E38002BECF8 /* AppDelegate.swift in Sources */,
+				A41FA9F51E3980BC00AB67EE /* Entry+CoreDataProperties.swift in Sources */,
+				A41FA9F71E3980BC00AB67EE /* Image+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +354,7 @@
 				A4913F131E172E38002BECF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
